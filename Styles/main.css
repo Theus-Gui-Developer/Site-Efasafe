@@ -1,0 +1,167 @@
+/*
+            DESENVOLVEDOR : MATHEUS GUILHERME PEREIRA LIMA.
+            PARA EMPRESA DE CONSULTORIA E NEGOCIOS EFASAFE.
+
+--------------------------------------------------------------------------------------------------
+    IMPORTANDO FONTES ROBOTO
+
+    METODO UTILIZADO, PREPARAR PRIMERO PRA DISPOSITIVOS MOVEIS E DEPOIS PRA COMPUTADORES
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+/*
+    DEFEININDO TAMAMANHO DO CORPO E PREPARANDO PRA RECEBER OS ELEMENTOS
+*/
+
+#main-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+/*
+    IMAGEMS DE FUNDO PRA MOBILES
+*/
+#main-page {
+    background-image: url("../packages-svg/EFASAFE-BACKGROUND.png");
+}
+#main-page {
+    /*background-image: url(EFASAFE-BACKGROUND.png);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+DEFININDO POSIÇÃO E TAMANHO DO LOGO
+*/
+
+#main-page  .logo-container{
+    width: 100vw;
+    text-align: center;
+}
+
+/*
+    PREPARAR A CONTENÇÃO DOS ELEMENTOS CENTRAIS
+*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*
+    DEFENINDO TAMANHO DA IMAGEM
+*/
+
+.container img {
+    width: 100vw;
+}
+
+/*
+    PREPARANDO CONTENCÇAO DO BUTÃO E TEXTO
+*/
+
+
+.container .container-interaction {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*
+    ESTILIZAÇÃO DO UNICO BOTÃO
+*/
+
+.container .container-interaction button {
+    margin: 1rem 0 1rem;
+    color: white;
+    background: linear-gradient(90deg, #E79016 51.33%, #FFAC35 98.5%); 
+    border: none;
+    font-size: 1rem;
+    padding: .8rem;
+    border-radius: 3rem;
+    width: 12rem;
+    box-shadow: 0 0 2em rgb(255,172,53);
+    outline: none;
+
+}
+
+.container .container-interaction button:hover{
+    background: linear-gradient(90deg, #d3800d 51.33%, #f39c21 98.5%);
+}
+
+/*
+    ESTILIZAÇÃO DO TEXTO EM TEXTO DESTACADO
+*/
+
+.container .container-interaction h1{
+    margin: 0 !important;
+    margin-bottom: 5rem;
+    font: 500 2rem Roboto;
+    color: #4a5a96 ;
+
+}
+
+/*
+    ESTILIZAÇÃO DO TEXTO EM MENOR DESTAQUE
+*/
+
+.container .container-interaction span {
+    font: 300 1.6rem Roboto;
+}
+
+
+/*
+    PREPARANDO LAYORT PARA COMPUTADORES
+*/
+
+@media (min-width: 1228px) {
+
+    /*
+        DEFININDO MARGIN AO LOGO
+    */
+
+    #main-page  .logo-container{
+        margin-top: 1.2rem;
+    }
+
+    /*
+    RETIRANDO MARGINS DO BOTÃO
+    */
+
+    .container .container-interaction button{
+        margin: 4rem 0 4rem;
+    }
+    
+    /*
+    DEFININDO NOVO TAMANHO A IMAGEM
+    */
+    
+    .container img {
+        width: 35vw;
+        margin: 0 7rem 0 0;
+    }
+    
+    /*DEFININDO A CONTENÇÃO DA IMAGEMD DE FUNDO*/
+    #main-page {
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
